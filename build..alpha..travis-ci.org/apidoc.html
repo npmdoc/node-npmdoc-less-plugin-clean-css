@@ -1,0 +1,198 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://lesscss.org"
+
+    >less-plugin-clean-css (v1.5.1)</a>
+</h1>
+<h4>clean-css plugin for less.js</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.less-plugin-clean-css">module less-plugin-clean-css</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.less-plugin-clean-css.less-plugin-clean-css">
+            function <span class="apidocSignatureSpan"></span>less-plugin-clean-css
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">less-plugin-clean-css.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.less-plugin-clean-css.usage">module less-plugin-clean-css.usage</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.less-plugin-clean-css.usage.printOptions">
+            function <span class="apidocSignatureSpan">less-plugin-clean-css.usage.</span>printOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.less-plugin-clean-css.usage.printUsage">
+            function <span class="apidocSignatureSpan">less-plugin-clean-css.usage.</span>printUsage
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.less-plugin-clean-css" id="apidoc.module.less-plugin-clean-css">module less-plugin-clean-css</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.less-plugin-clean-css.less-plugin-clean-css" id="apidoc.element.less-plugin-clean-css.less-plugin-clean-css">
+        function <span class="apidocSignatureSpan"></span>less-plugin-clean-css
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function LessPluginCleanCSS(options) {
+    this.options = options;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.less-plugin-clean-css.usage" id="apidoc.module.less-plugin-clean-css.usage">module less-plugin-clean-css.usage</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.less-plugin-clean-css.usage.printOptions" id="apidoc.element.less-plugin-clean-css.usage.printOptions">
+        function <span class="apidocSignatureSpan">less-plugin-clean-css.usage.</span>printOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">printOptions = function () {
+    console.log(&#x22;we support the following arguments... &#x27;keep-line-breaks&#x27;, &#x27;b&#x27;&#x22;);
+    console.log(&#x22;&#x27;s0&#x27;, &#x27;s1&#x27;, &#x27;advanced&#x27;, &#x27;rebase&#x27;, &#x27;keepSpecialComments&#x27;, compatibility&#x27;, &#x27;rounding-precision&#x27;&#x22;);
+    console.log(&#x22;&#x27;skip-aggressive-merging&#x27;, &#x27;skip-shorthand-compacting&#x27;&#x22;)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    console.log(&#x22;Clean CSS Plugin&#x22;);
+    console.log(&#x22;specify plugin with --clean-css&#x22;);
+    console.log(&#x22;To pass an option to clean css, we use similar CLI arguments as from https://github.com/GoalSmashers/clean
+-css&#x22;);
+    console.log(&#x22;The exception is advanced and rebase - we turn these off by default so use advanced/rebase to turn it back
+ on again.&#x22;);
+    console.log(&#x22;--clean-css=\&#x22;-s1 --advanced --rebase\&#x22;&#x22;);
+    console.log(&#x22;The options do not require dashes, so this is also equivalent&#x22;);
+    console.log(&#x22;--clean-css=\&#x22;s1 advanced rebase\&#x22;&#x22;);
+    this.<span class="apidocCodeKeywordSpan">printOptions</span>();
+    console.log(&#x22;&#x22;);
+},
+printOptions: function() {
+    console.log(&#x22;we support the following arguments... &#x27;keep-line-breaks&#x27;, &#x27;b&#x27;&#x22;);
+    console.log(&#x22;&#x27;s0&#x27;, &#x27;s1&#x27;, &#x27;advanced&#x27;, &#x27;rebase&#x27;, &#x27;keepSpecialComments&#x27;,
+compatibility&#x27;, &#x27;rounding-precision&#x27;&#x22;);
+    console.log(&#x22;&#x27;skip-aggressive-merging&#x27;, &#x27;skip-shorthand-compacting&#x27;&#x22;)
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.less-plugin-clean-css.usage.printUsage" id="apidoc.element.less-plugin-clean-css.usage.printUsage">
+        function <span class="apidocSignatureSpan">less-plugin-clean-css.usage.</span>printUsage
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">printUsage = function () {
+    console.log(&#x22;&#x22;);
+    console.log(&#x22;Clean CSS Plugin&#x22;);
+    console.log(&#x22;specify plugin with --clean-css&#x22;);
+    console.log(&#x22;To pass an option to clean css, we use similar CLI arguments as from https://github.com/GoalSmashers/clean-css&#x22;);
+    console.log(&#x22;The exception is advanced and rebase - we turn these off by default so use advanced/rebase to turn it back on again
+.&#x22;);
+    console.log(&#x22;--clean-css=\&#x22;-s1 --advanced --rebase\&#x22;&#x22;);
+    console.log(&#x22;The options do not require dashes, so this is also equivalent&#x22;);
+    console.log(&#x22;--clean-css=\&#x22;s1 advanced rebase\&#x22;&#x22;);
+    this.printOptions();
+    console.log(&#x22;&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
